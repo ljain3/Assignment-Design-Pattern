@@ -2,6 +2,8 @@ public interface ProductMenu {
 
 	private Person person;
 
+	private Person person;
+
 	public abstract void showMenu();
 
 	public abstract void showAddButton();

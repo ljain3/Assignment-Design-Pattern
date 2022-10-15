@@ -4,6 +4,8 @@ public class Person {
 
 	private ProductMenu productMenu;
 
+	private ProductMenu productMenu;
+
 	public void showMenu() {
 
 	}
