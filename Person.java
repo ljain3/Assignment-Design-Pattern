@@ -1,12 +1,6 @@
-public class Person {
+public abstract class Person {
 
 	private ProductMenu theProductMenu;
-
-	private ProductMenu productMenu;
-
-	private ProductMenu productMenu;
-
-	private ProductMenu productMenu;
 
 	public void showMenu() {
 

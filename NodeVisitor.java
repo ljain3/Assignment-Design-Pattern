@@ -1,4 +1,4 @@
-public class NodeVisitor {
+public abstract class NodeVisitor {
 
 	public void visitProduct(Product product) {
 

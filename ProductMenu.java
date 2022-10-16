@@ -1,10 +1,6 @@
 public interface ProductMenu {
 
-	private Person person;
-
-	private Person person;
-
-	private Person person;
+//	Person person = new Person();
 
 	public abstract void showMenu();
 

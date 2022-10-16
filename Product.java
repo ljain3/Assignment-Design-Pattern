@@ -4,6 +4,4 @@ public class Product {
 
 	private Trading trading;
 
-	private Trading trading;
-
 }
