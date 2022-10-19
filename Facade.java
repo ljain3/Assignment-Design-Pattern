@@ -1,5 +1,7 @@
-public class Facade {
+import java.util.Scanner;
 
+public class Facade {
+	Facade(){}
 	private int UserType;
 
 	private Product theSelectedProduct;
@@ -10,8 +12,20 @@ public class Facade {
 
 	private Person thePerson;
 
-	public boolean login() {
-		return false;
+	public void login() {
+		Login loginObj = new Login();
+		Scanner scanner = new Scanner (System.in);
+		System.out.print("Enter your user name");
+		String uname = scanner.next();
+		System.out.print("Enter your password");
+		String pass = scanner.next();
+		if(loginObj.findInBuyers(uname,pass)){
+			UserType=0;
+			System.out.println("User is a buyer");
+		} else if (loginObj.findInSellers(uname,pass)) {
+			UserType=1;
+			System.out.println("User is a seller");
+		} else {System.out.println("Incorrect User Name or Password, Try again!");}
 	}
 
 	public void addTrading() {
@@ -38,7 +52,7 @@ public class Facade {
 
 	}
 
-	public void createUser() {
+	public void createUser(UserInfoItem userinfoitem) {
 
 	}
 
