@@ -1,5 +1,6 @@
 public abstract class Person {
-
+	String username;
+	int type;
 	private ProductMenu theProductMenu;
 
 	public void showMenu() {
